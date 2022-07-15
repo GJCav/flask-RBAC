@@ -8,3 +8,5 @@ from . import model
 model.init(app)
 
 from . import auth
+
+app.register_blueprint(auth.router)
